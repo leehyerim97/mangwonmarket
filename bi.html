@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/lib/w3.css">
+
+  <title> Mangwon market Application </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+  </script>
+
+     <script>
+$(document).ready(function(){
+  $(".button1").click(function(){
+    $(".modal1").show(500);
+    $(".style01, .style02, .style03, .img1,.img2, .img3, .img4, .title ,.title2").hide(500);
+  });
+
+  $(".x").click(function(){
+    $(".modal1").hide(500);
+    $(".style01, .style02, .style03, .img1,.img2, .img3, .img4, .title ,.title2").show(500);
+  });  
+});
+</script>
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,700&display=swap');
+
+a{color: #000000; text-decoration: none;}
+a:hover{padding-bottom: 2px; border-bottom:2px solid;}
+p{padding:0; margin: 0}
+
+body, html{margin-top: 0.5%; margin-left: 2%; margin-right: 2%; margin-bottom: 0.5%; padding: 0.5%; }
+html{ overflow-y: scroll;}
+
+  .menu0{width: 13%; font-size: 2vw; padding-top: 0.3%; padding-bottom:0.3%; padding-left:0.5%; padding-right:0.5%; float: left; font-family: 'Piazzolla', serif; text-align: center; left: 40; }
+  .menu1{width: 13%; font-size: 2vw; padding-top: 0.3%; padding-bottom:0.3%; padding-left:0.5%; padding-right:0.5%; float: right; font-family: 'Piazzolla', serif; text-align: center; right: 40; }
+
+.scroll{ overflow: scroll; }
+.left{width:100%;}
+.right{width:100%;}
+
+.style01 {  width: 60%; height:75%; position: absolute; left : 20%; top:22.5%; overflow: scroll; overflow-x : hidden; }
+.style02 { position: absolute; left: 51%; top:28%; font-size: 1.3vw; font-family: 'Piazzolla', serif;}
+.style03 { position: absolute; right: 24%; top:34%; width: 25%; font-size: 1.3vw; line-height:1.7em;}
+
+.button{float:left;}
+.button1{float:left;}
+
+.modal1{ width:80%; height:90%; position:absolute; top:13%; left:10%; display:none;}
+
+.x{position: fixed; left:90%; font-size: 2vw; font-family: 'Piazzolla', serif; background-color: #F4FA58; }
+
+#rotating_img {-webkit-animation: rotation 2s infinite linear;}
+  @-webkit-keyframes rotation {from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}}
+
+    .animated {-webkit-animation-duration: 2.5s; animation-duration: 2.5s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+    .animated.infinite { -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;}
+    @-webkit-keyframes shake {
+  0%, 100% {-webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0)}  
+  10%,30%,50%,70%,90% {-webkit-transform: translate3d(-10px, 0, 0);
+   transform: translate3d(-10px, 0, 0)}
+  20%, 40%,60%,80% { -webkit-transform: translate3d(10px, 0, 0);
+   transform: translate3d(10px, 0, 0) }}
+@keyframes shake {
+  0%, 100% { -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0) }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0); transform: translate3d(-10px, 0, 0)}
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0); -ms-transform: translate3d(10px, 0, 0);  transform: translate3d(10px, 0, 0) }}
+   .shake { -webkit-animation-name: shake; animation-name: shake}
+   
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="square" class="menu0 shake animated infinite">
+<a href="mwm.html"><img src="mwtitle.png" width="80%" height="40%"></div>
+
+<div id="rotating_img" class="menu1 rotating_img"><a href="poster.html">
+  <img src="me2.png" width="57%" height="40%"></a></div>
+<div class="menu1"><a href="bi.html"><img src="me4.png" width="57%" height="40%"></a></div>
+<div id="rotating_img" class="menu1 rotating_img"><a href="mapp.html">
+  <img src="me5.png" width="57%" height="40%"></a></div>
+
+<div class="left">
+  <div class="style01 button button1">
+<img src="app/a1.jpg" alt="a" style= "width:100%;" >
+<img src="app/a2.jpg" alt="b" style= "width:100%;" >
+<img src="app/a3.jpg" alt="c" style= "width:100%;" >
+<img src="app/a4.jpg" alt="d" style= "width:100%;" >
+<img src="app/a5.jpg" alt="e" style= "width:100%;" >
+<img src="app/a6.jpg" alt="f" style= "width:100%;" >
+<img src="app/a7.jpg" alt="g" style= "width:100%;" >
+<img src="app/a8.jpg" alt="g" style= "width:100%;" >
+<img src="app/a9.jpg" alt="g" style= "width:100%;" >
+<img src="app/a10.jpg" alt="g" style= "width:100%;" >
+<img src="app/a11.jpg" alt="g" style= "width:100%;" >
+<img src="app/a12.jpg" alt="g" style= "width:100%;" >
+<img src="app/a13.jpg" alt="g" style= "width:100%;" >
+<img src="app/a14.jpg" alt="g" style= "width:100%;" >
+<img src="app/a15.jpg" alt="g" style= "width:100%;" >
+<img src="app/a16.jpg" alt="g" style= "width:100%;" >
+<img src="app/a17.jpg" alt="g" style= "width:100%;" >
+<img src="app/a18.jpg" alt="g" style= "width:100%;" >
+<img src="app/a19.jpg" alt="g" style= "width:100%;" >
+<img src="app/a20.jpg" alt="g" style= "width:100%;" >
+<img src="app/a21.jpg" alt="g" style= "width:100%;" >
+<img src="app/a22.jpg" alt="g" style= "width:100%;" >
+<img src="app/a23.jpg" alt="g" style= "width:100%;" >
+<img src="app/a24.jpg" alt="g" style= "width:100%;" >
+<img src="app/a25.jpg" alt="g" style= "width:100%;" >
+<img src="app/a26.jpg" alt="g" style= "width:100%;" >
+<img src="app/a27.jpg" alt="g" style= "width:100%;" >
+<img src="app/a28.jpg" alt="g" style= "width:100%;" >
+<img src="app/a29.jpg" alt="g" style= "width:100%;" >
+<img src="app/a30.jpg" alt="g" style= "width:100%;" >
+<img src="app/a31.jpg" alt="g" style= "width:100%;" >
+<img src="app/a32.jpg" alt="g" style= "width:100%;" >
+<img src="app/a33.jpg" alt="g" style= "width:100%;" >
+<img src="app/a34.jpg" alt="g" style= "width:100%;" >
+
+
+</div>
+</div>
+
+  <div class="modal1">
+  <div class="x"> close </div>
+ 
+<img src="app/a1.jpg" alt="a" style= "width:100%;" >
+<img src="app/a2.jpg" alt="b" style= "width:100%;" >
+<img src="app/a3.jpg" alt="c" style= "width:100%;" >
+<img src="app/a4.jpg" alt="d" style= "width:100%;" >
+<img src="app/a5.jpg" alt="e" style= "width:100%;" >
+<img src="app/a6.jpg" alt="f" style= "width:100%;" >
+<img src="app/a7.jpg" alt="g" style= "width:100%;" >
+<img src="app/a8.jpg" alt="g" style= "width:100%;" >
+<img src="app/a9.jpg" alt="g" style= "width:100%;" >
+<img src="app/a10.jpg" alt="g" style= "width:100%;" >
+<img src="app/a11.jpg" alt="g" style= "width:100%;" >
+<img src="app/a12.jpg" alt="g" style= "width:100%;" >
+<img src="app/a13.jpg" alt="g" style= "width:100%;" >
+<img src="app/a14.jpg" alt="g" style= "width:100%;" >
+<img src="app/a15.jpg" alt="g" style= "width:100%;" >
+<img src="app/a16.jpg" alt="g" style= "width:100%;" >
+<img src="app/a17.jpg" alt="g" style= "width:100%;" >
+<img src="app/a18.jpg" alt="g" style= "width:100%;" >
+<img src="app/a19.jpg" alt="g" style= "width:100%;" >
+<img src="app/a20.jpg" alt="g" style= "width:100%;" >
+<img src="app/a21.jpg" alt="g" style= "width:100%;" >
+<img src="app/a22.jpg" alt="g" style= "width:100%;" >
+<img src="app/a23.jpg" alt="g" style= "width:100%;" >
+<img src="app/a24.jpg" alt="g" style= "width:100%;" >
+<img src="app/a25.jpg" alt="g" style= "width:100%;" >
+<img src="app/a26.jpg" alt="g" style= "width:100%;" >
+<img src="app/a27.jpg" alt="g" style= "width:100%;" >
+<img src="app/a28.jpg" alt="g" style= "width:100%;" >
+<img src="app/a29.jpg" alt="g" style= "width:100%;" >
+<img src="app/a30.jpg" alt="g" style= "width:100%;" >
+<img src="app/a31.jpg" alt="g" style= "width:100%;" >
+<img src="app/a32.jpg" alt="g" style= "width:100%;" >
+<img src="app/a33.jpg" alt="g" style= "width:100%;" >
+<img src="app/a34.jpg" alt="g" style= "width:100%;" >
+</div>
+</div>
+
+
+
+</body>
+
+</html>
