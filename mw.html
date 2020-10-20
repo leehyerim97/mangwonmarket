@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <title> mangwon market </title>
+
+ <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+  </script>
+
+     <script>
+$(document).ready(function(){
+  $(".button1").click(function(){
+    $(".modal1").show(500);
+    $(".style01, .style02, ").hide(500);
+  });
+
+  $(".x").click(function(){
+    $(".modal1").hide(500);
+    $(".style01, .style02, ").show(500);
+  });  
+});
+</script>
+
+   <script>
+$(document).ready(function(){
+  $(".button3").click(function(){
+    $(".modal2").show(500);
+    $(".style03, ").hide(500);
+  });
+
+  $(".x1").click(function(){
+    $(".modal2").hide(500);
+    $(".style03, ").show(500);
+  });  
+});
+</script>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+
+a{color: black; text-decoration: none;}
+p{padding:0; margin: 0}
+body, html{margin: 0; padding: 0;}
+
+.menuu{width: 100%, height: 100vh}
+
+.menu0{width: 13%; font-size: 2vw; padding-top: 1.5%; float: left; position: fixed; font-family: 'Piazzolla', serif; text-align: center; left: 43%; }
+
+.menu1{width: 24%; font-size: 2vw; float: right; position: fixed; font-family: 'Piazzolla', serif; text-align:right; right: 35%; top:25%; opacity: 88%; }
+.menu2{width: 24%; font-size: 2vw; float: left; position: fixed; font-family: 'Piazzolla', serif; text-align: center; left: 27%; top:20%; opacity: 80%; }
+.menu3{width: 24%; font-size: 2vw; float: right; position: fixed; font-family: 'Piazzolla', serif; text-align: center; right: 16%; top:20%; opacity: 88%; }
+.menu4{width: 24%; font-size: 2vw; float: right; position: fixed; font-family: 'Piazzolla', serif; text-align: center; right: 13%; opacity: 88%; }
+.menu5{width: 24%; font-size: 2vw; float: right; position: fixed; font-family: 'Piazzolla', serif; text-align: center; right: 14%; top:11%; opacity: 88%; }
+.menu6{width: 24%; font-size: 2vw; float: left; position: fixed; font-family: 'Piazzolla', serif; text-align: center; left:14%; padding-top: 1%; opacity: 88%; }
+
+.left { width: 80%; left : 20%; top:48%; padding-top: 10%; float: left; padding-left: 11.5%; padding-right:7%; }
+.style02 { width: 49%; height:67.5%; left : 50%; top:58%; padding-top: 1%; float: left; padding-right: 1%;}
+
+.mySlides4{position: static; float: left; left: 10%; padding-top:17%; padding-left:1%;}
+.btn-floating4{position: static; float: left; width:2%; font-size : 5vw; padding-top: 47%;}
+
+.poster1{float: left; padding-top: 19%; padding-left:8%; width: 87%; overflow-x: hidden; }
+
+.app{float: left; padding-top: 18%; padding-left: 11%; width: 77%; overflow-x: hidden; }
+
+.videom{ float: left; top: 0; left:0; width: 80%; padding-top:17%; padding-left:14%; }
+
+.photo{ padding-top: 17%; padding-left:2.5%; width: 97.5%; float: left; overflow-x: hidden;}
+
+
+.Parallaximage{height: 150px; padding-bottom: 10%; }
+.Parallaximage image{width: 99.8%; position:relative; top:0; z-index: -999;}
+
+.mapp{position: static; width: 100%; }
+.background{position: static; top:18%; bottom: 10%; padding-left: 38%; width:50%; height: 80%; }
+  .map1{position:absolute; width:12%; left:37%; top:21%;}
+  .map2{position:absolute; width:20%; left:25%; top:35%;}
+  .map3{position:absolute; width:20%; left:50%; top:85%;}
+  .map4{position:absolute; width:20%; left:37%; top:5%;} 
+  .map5{position:absolute; width:20%; left:58%; top:47%;} 
+  .map6{position:absolute; width:20%; left:68%; top:40%;} 
+  .map7{position:absolute; width:20%; left:29%; top:58%;} 
+  .map8{position:absolute; width:20%; left:50%; top:30%;} 
+  .map9{position:absolute; width:20%; left:50%; top:5%;} 
+  .map10{position:absolute; width:20%; left:15%; top:40%;}  
+  .map11{position:absolute; width:20%; left:39%; top:57%;} 
+  .map12{position:absolute; width:20%; left:27%; top:5%;} 
+  .map13{position:absolute; width:20%; left:10%; top:22%;} 
+  .map14{position:absolute; width:20%; left:25%; top:22%;} 
+  .map15{position:absolute; width:20%; left:60%; top:12%;} 
+  .map16{position:absolute; width:20%; left:69%; top:23%;} 
+  .map17{position:absolute; width:20%; left:80%; top:30%;} 
+
+
+/*base code*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/*the animation definition 바운스*/
+@-webkit-keyframes bounce {
+  0%, 100%, 20%, 53%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  40%,
+  43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0)
+  }
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0)
+  }
+}
+@keyframes bounce {
+  0%, 100%, 20%, 53%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  40%,
+  43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    -ms-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0)
+  }
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    -ms-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0)
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0)
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom
+}
+
+/*뱅글뱅글 로테이트*/
+
+ #rotating_img {-webkit-animation: rotation 2s infinite linear;}
+  @-webkit-keyframes rotation {from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}}
+
+    .animated {-webkit-animation-duration: 2.5s; animation-duration: 2.5s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+    .animated.infinite { -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;}
+    @-webkit-keyframes shake {
+    0%, 100% {-webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0)}  
+    10%,30%,50%,70%,90% {-webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0)}
+    20%, 40%,60%,80% { -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0) }}
+    @keyframes shake {
+    0%, 100% { -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0) }
+    10%, 30%, 50%, 70%, 90% { -webkit-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0); transform: translate3d(-10px, 0, 0)}
+    20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0); -ms-transform: translate3d(10px, 0, 0);  
+    transform: translate3d(10px, 0, 0) }}
+    .shake { -webkit-animation-name: shake; animation-name: shake}
+
+
+.animated {
+  -webkit-animation-duration: 4s;
+  animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated2.infinite2 {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*the animation definition*/
+@-webkit-keyframes flash {
+  0%, 80%, 50% {
+    opacity: 0.5
+  }
+  25%,
+  65% { opacity: 0}
+}
+@keyframes flash {
+  0%, 80%, 50% { opacity: 0.5}
+  25%,
+  65% { opacity: 0}}
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash
+}
+
+
+
+/*우블*/
+    .animated1 {
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated1.infinite1 {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated1.hinge1 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/*the animation definition*/
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none
+  }
+}
+@keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    -ms-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)}
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)}
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)}
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    -ms-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)}
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)}
+    100% {-webkit-transform: none; -ms-transform: none; transform: none }}
+    .wobble { -webkit-animation-name: wobble; animation-name: wobble}
+
+
+  /*base code*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/*the animation definition*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0.5
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0.5
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn
+}
+
+
+    .animation {width: 20%; padding-top:15%; position: fixed;
+     animation: example 25s infinite; overflow-x: hidden;}
+
+    @keyframes example {0%, 100% { left: 0%; } 50% { left: 35%; }}
+
+      /*font-english*/
+       .font-b{font-family: 'Piazzolla', serif;}
+       /*font-kor*/
+       .font-f{font-family: 'Noto Sans KR', sans-serif;}
+    
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="menuu">
+<div id="square" class="menu0 bounce animated infinite">
+<a href="#top"><img src="mwtitle.png" width="90%" height="40%"></a></div>
+
+<div id="square" class="menu1 fadeIn animated infinite">
+  <a href="#poster"><img src="me2.png" width="68%" height="40%"></a></div>
+
+<div id="square" class="menu2 wobble animated1 infinite1">
+  <a href="#journal"><img src="me3.png" width="68%" height="40%"></a></div>
+
+<div class="menu3 animation">
+  <a href="#app"><img src="me4.png" width="88%" height="40%"></a></div>
+
+<div id="rotating_img" class="menu5 rotating_img"> 
+  <a href="#videomm"><img src="me1.png" width="68%" height="40%"></a></div>
+
+<div id="square" class="menu6 flash animated infinite">
+  <a href="#photo"><img src="me6.png" width="68%" height="40%"></a></div>
+</div>
+
+
+<div class="videom">
+<a name="videomm">
+<video style="width: 90%;" autoplay="" controls>
+  <source src="mmwmovie.mp4" type="video/mp4">
+</video>
+</a>
+</div>
+
+
+
+<div class="left"><a name="about">
+<img src="about/a1.jpg" alt="a" style= "width:48%;" >
+<img src="about/a2.jpg" alt="b" style= "width:48%;" >
+
+<div class="ans1" style="width: 31%; float: left; padding-top: 10%; padding-left: 1%; padding-right: 1%; font-size: 2.5vw; font-family: 'Noto Sans KR', sans-serif; 
+text-align: center; ">
+ 골목연결</div>
+<div class="ans1" style="width: 31%; float: left; padding-top: 10%; padding-left: 1%; padding-right: 1%; font-size: 2.5vw; font-family: 'Noto Sans KR', sans-serif; text-align: center; ">
+ 음식문화</div>
+ <div class="ans1" style="width: 31%; float: left;  padding-top: 10%; padding-left: 1%; padding-right: 1%; font-size: 2.5vw; font-family: 'Noto Sans KR', sans-serif; text-align: center; ">
+ 문화예술</div>
+
+
+<div class="ans1" style="width: 31%; float: left; padding-top: 4%; padding-left: 1%; padding-right: 1%; font-size: 1vw; font-family: 'Noto Sans KR', sans-serif; ">
+  홍대, 합정과 가까운 망원동은 대부분 골목으로 이뤄져있는 동네이다.<br>
+망원시장도 망원동의 골목으로 이루어진 시장으로 망원동과 함께 구경하기 좋다.</div>
+<div class="ans1" style="width: 31%; float: left; padding-top: 4%; padding-left: 1%; padding-right: 1%; font-size: 1vw; font-family: 'Noto Sans KR', sans-serif; ">
+ 망원시장엔 가공이나 조리가 필요한 음식 외에도 즉석으로 팔고 있는 음식이 있다.<Br>
+분식이나 칼국수, 돈까스, 마쉬멜로아이스크림 등 다양한 음식을 팔고 있으며 <br>
+저렴한 가격에 맛있고 다양한 음식을 접할 수 있어 많은 사람들이 찾고 방송에 나온다.</div>
+<div class="ans1" style="width: 31%; float: left; padding-top: 4%; padding-left: 1%; padding-right: 1%; font-size: 1vw; font-family: 'Noto Sans KR', sans-serif; ">
+ 망원시장은 정말 다양한 나잇대의 사람들이 모인다.<br>
+일러스트레이터의 작품이나 공연을 즐길 수 있게 해두었다.</div>
+<img src="about/a4.png" alt="a" style= "width:98%; padding-top: 10%;" >
+</a></div>
+
+<div class="btn-floating4 " style="float:left; top:53%; left:3%; padding-left:4%; 
+z-index: 99;" onclick="plusDivs4(-1)">❮</div>
+<div class="w3-content4" style="width: 96%; height: 65%; padding-left: 4%;">
+  <a name="journal">
+     <img class="mySlides4" src="nal/j1.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j2.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j3.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j4.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j5.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j6.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j7.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j8.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j9.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j10.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j11.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j12.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j13.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j14.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j15.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j16.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j17.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j18.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j19.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j20.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j21.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j22.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j23.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j24.jpg" style="width: 90%; height: 60%">
+     <img class="mySlides4" src="nal/j25.jpg" style="width: 90%; height: 60%">
+</a></div>
+<div class="btn-floating4" style=" float:right; top:53%; padding-right:4%; right:4%;
+z-index: 99;" onclick="plusDivs4(1)">❯</div>
+
+<div class="poster1"><a name="poster">
+<img src="poster/p1.jpg" alt="a" style= "width:48.5%;" >
+<img src="poster/p2.jpg" alt="b" style= "width:48.5%;" >
+<img src="poster/p3.jpg" alt="c" style= "width:48.5%;" >
+<img src="poster/p4.jpg" alt="d" style= "width:48.5%;" >
+<img src="poster/p5.jpg" alt="e" style= "width:48.5%;" >
+<img src="poster/p6.jpg" alt="f" style= "width:48.5%;" >
+<img src="poster/p7.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p8.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p9.jpg" alt="g" style= "width:48.5%;" >
+
+<img src="poster/p10.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p11.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p12.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p13.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p14.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p15.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p16.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p17.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p18.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p19.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p20.jpg" alt="g" style= "width:48.5%;" >
+
+<img src="poster/p21.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p22.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p23.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p24.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p25.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p26.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p27.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p28.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p29.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p30.jpg" alt="g" style= "width:48.5%;" >
+
+<img src="poster/p31.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p32.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p33.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p34.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p35.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p36.jpg" alt="g" style= "width:48.5%;" >
+<img src="poster/p37.jpg" alt="g" style= "width:48.5%; padding-bottom: 0.5%;" >
+<img src="poster/p38.jpg" alt="g" style= "width:48.5%; padding-bottom: 0.5%;" >
+</a></div>
+
+<div class="app"><a name="app">
+<img src="app/a1.jpg" alt="a" style= "width:100%;" >
+<img src="app/a2.jpg" alt="b" style= "width:100%;" >
+<img src="app/a3.jpg" alt="c" style= "width:100%;" >
+<img src="app/a4.jpg" alt="d" style= "width:100%;" >
+<img src="app/a5.jpg" alt="e" style= "width:100%;" >
+<img src="app/a6.jpg" alt="f" style= "width:100%;" >
+<img src="app/a7.jpg" alt="g" style= "width:100%;" >
+<img src="app/a8.jpg" alt="g" style= "width:100%;" >
+<img src="app/a9.jpg" alt="g" style= "width:100%;" >
+
+<img src="app/a10.jpg" alt="g" style= "width:100%;" >
+<img src="app/a11.jpg" alt="g" style= "width:100%;" >
+<img src="app/a12.jpg" alt="g" style= "width:100%;" >
+<img src="app/a13.jpg" alt="g" style= "width:100%;" >
+<img src="app/a14.jpg" alt="g" style= "width:100%;" >
+<img src="app/a15.jpg" alt="g" style= "width:100%;" >
+<img src="app/a16.jpg" alt="g" style= "width:100%;" >
+<img src="app/a17.jpg" alt="g" style= "width:100%;" >
+<img src="app/a18.jpg" alt="g" style= "width:100%;" >
+<img src="app/a19.jpg" alt="g" style= "width:100%;" >
+<img src="app/a20.jpg" alt="g" style= "width:100%;" >
+
+<img src="app/a21.jpg" alt="g" style= "width:100%;" >
+<img src="app/a22.jpg" alt="g" style= "width:100%;" >
+<img src="app/a23.jpg" alt="g" style= "width:100%;" >
+<img src="app/a24.jpg" alt="g" style= "width:100%;" >
+<img src="app/a25.jpg" alt="g" style= "width:100%;" >
+<img src="app/a26.jpg" alt="g" style= "width:100%;" >
+<img src="app/a27.jpg" alt="g" style= "width:100%;" >
+<img src="app/a28.jpg" alt="g" style= "width:100%;" >
+<img src="app/a29.jpg" alt="g" style= "width:100%;" >
+<img src="app/a30.jpg" alt="g" style= "width:100%;" >
+
+<img src="app/a31.jpg" alt="g" style= "width:100%;" >
+<img src="app/a32.jpg" alt="g" style= "width:100%;" >
+<img src="app/a33.jpg" alt="g" style= "width:100%;" >
+<img src="app/a34.jpg" alt="g" style= "width:100%;" >
+</a></div>
+
+ <div class="photo"><a name="photo">
+     <img src="photo/pho1.jpg" style="width:23.8%;">
+     <img src="photo/pho2.jpg" style="width:23.8%;">
+     <img src="photo/pho3.jpg" style="width:23.8%;">
+     <img src="photo/pho4.jpg" style="width:23.8%;">
+     <img src="photo/pho5.jpg" style="width:23.8%;">
+     <img src="photo/pho6.jpg" style="width:23.8%;">
+     <img src="photo/pho7.jpg" style="width:23.8%;">
+     <img src="photo/pho8.jpg" style="width:23.8%;">
+     <img src="photo/pho9.jpg" style="width:23.8%;">
+     <img src="photo/pho10.jpg" style="width:23.8%;">
+
+     <img src="photo/pho11.jpg" style="width:23.8%;">
+     <img src="photo/pho12.jpg" style="width:23.8%;">
+     <img src="photo/pho13.jpg" style="width:23.8%;">
+     <img src="photo/pho14.jpg" style="width:23.8%;">
+     <img src="photo/pho15.jpg" style="width:23.8%;">
+     <img src="photo/pho16.jpg" style="width:23.8%;">
+     <img src="photo/pho17.jpg" style="width:23.8%;">
+     <img src="photo/pho18.jpg" style="width:23.8%;">
+     <img src="photo/pho19.jpg" style="width:23.8%;">
+     <img src="photo/pho20.jpg" style="width:23.8%;">
+
+     <img src="photo/pho21.jpg" style="width:23.8%;">
+     <img src="photo/pho22.jpg" style="width:23.8%;">
+     <img src="photo/pho23.jpg" style="width:23.8%;">
+     <img src="photo/pho24.jpg" style="width:23.8%;">
+     <img src="photo/pho25.jpg" style="width:23.8%;">
+     <img src="photo/pho26.jpg" style="width:23.8%;">
+     <img src="photo/pho27.jpg" style="width:23.8%;">
+     <img src="photo/pho28.jpg" style="width:23.8%;">
+     <img src="photo/pho29.jpg" style="width:23.8%; padding-bottom: 0.5%;">
+     <img src="photo/pho30.jpg" style="width:23.8%; padding-bottom: 0.5%;">
+     <img src="photo/pho31.jpg" style="width:23.8%; padding-bottom: 0.5%;">
+     <img src="photo/pho32.jpg" style="width:23.8%; padding-bottom: 0.5%;"></a></div>
+</a></div>
+
+<script>
+var slideIndex4 = 1;
+showDivs4(slideIndex4);
+function plusDivs4(n) {
+  showDivs4(slideIndex4 += n);
+}
+function showDivs4(n) {
+  var i4;
+  var x4 = document.getElementsByClassName("mySlides4");
+  if (n > x4.length) {slideIndex4 = 1}    
+  if (n < 1) {slideIndex4 = x4.length} ;
+  for (i4 = 0; i4 < x4.length; i4++) {
+     x4[i4].style.display = "none";  
+  }
+  x4[slideIndex4-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
+
